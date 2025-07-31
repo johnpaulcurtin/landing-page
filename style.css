@@ -89,8 +89,11 @@ button {
     display: flex;
     flex-direction: column;
     background-color:#f9faf8; 
+    justify-content: center;
     align-items: center;
     flex:1;
+    padding: 48px;
+  
 
 }
 
@@ -108,14 +111,23 @@ h2  {
     margin: 100px;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
 .box-cards {
     border: 2px solid #3882f6;
     border-radius: 8px;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   
 
 }
+
 
 .cards-text {
     color: #060606;
@@ -154,9 +166,9 @@ h3 {
     display: flex;    
     justify-content: center;
     align-items: center;
-    padding: 48px;
     flex:1;
-    height: 500px;
+    padding: 48px;
+   
 }
 
 .action-container { 
@@ -167,8 +179,8 @@ h3 {
     color:#f9faf8;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
-    height: 45%;
+    width: 65%;
+    height: 25%;
     padding: 48px 96px;
     border-radius: 8px;
 }
