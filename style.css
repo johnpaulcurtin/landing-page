@@ -1,57 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-body {
+* {box-sizing: border-box;
     font-family: roboto, sans-serif;
-    background-color: #1F2937;
+}
+
+body {
     display:flex;
     flex-direction: column;
-    padding: 0px 48px;
+    margin:0;
+
+
 }
 
 .site-header {
+    background-color: #1F2937;
     display: flex;
     justify-content: space-between;
+    padding: 0 48px;
+
    
 }
 
 ul {list-style-type: none;
     display: flex;
-    margin: 0;
-    padding: 0;
     gap: 16px;
 }
 
-.header-logo {
+h1 {
     font-size: 24px;
     color: #f9faf8;
   
 }
 .header-links {display: flex;}
 
-.header-links, .hero-secondary, .action-secondary{
+
+p, .header-links {
     font-size: 18px;
     color: #E5e7eb;
 }
 
-
 .hero {
+    background-color: #1F2937;
     display: flex;
-    font-size: 48px;
-    font-weight: 900;
-    color:#f9faf8;
-    justify-content: space-between;
-    padding-right: 24px;
-    
-   
-
+    gap: 48px;
+    padding: 48px;
 }
+
 .hero-text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    flex: 1;
-    margin:0;
+    justify-content:center;
+
 }
+
+.hero-header {
+    color:#f9faf8;
+    font-size: 48px;
+    font-weight: 900;}
 
 button {
     font-family: roboto, sans-serif;
@@ -65,7 +70,6 @@ button {
 
 .hero-img {
     width: 300px;
-    flex: 1;
   
 
 }
@@ -76,6 +80,9 @@ button {
     flex-direction: column;
     background-color:#f9faf8; 
     align-items: center;
+    padding: 48px;
+    flex:1;
+    height: 500px;
 }
 .cards-title {
     font-size: 36px;
@@ -84,15 +91,23 @@ button {
         }
 
 .cards-container {
-    display: flex
+    display: flex;
+    justify-content: center;
+    gap: 48 px;
 }
 
-.cards-img {
-    border-color: #3882f6;
-    border: 20px;
+.cards img {
+    border: 2px solid #3882f6;
+    border-radius: 8px;
     width: 50 px;
     height: 50px;
+    object-fit: contain;
 
+}
+
+.cards-text {
+    color: #060606;
+    text-align: center;
 }
 
 .quote {
@@ -105,6 +120,9 @@ button {
     color: #1f2937;
     justify-content: center;
     align-items: center;
+    padding: 48px;
+    flex:1;
+    height: 500px;
 }
 
 .action{
@@ -113,7 +131,8 @@ button {
     justify-content: center;
     align-items: center;
     padding: 48px;
-    
+    flex:1;
+    height: 500px;
 }
 
 .action-container { 
@@ -124,18 +143,19 @@ button {
     color:#f9faf8;
     justify-content: space-between;
     align-items: center;
-    padding: 24px;
+    padding: 48px 96px;
     border-radius: 8px;
 }
 
 .action-button{
     border: 2px solid #f9faf8;
     border-radius: 8px;
-    padding: 8px 24px;
+
 }
    
 
 .footer {
+    background-color: #1F2937;
      font-size: 18px;
     color: #E5e7eb;
     display: flex;
