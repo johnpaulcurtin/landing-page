@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-* {box-sizing: border-box;
-    font-family: roboto, sans-serif;
+* {
+    margin:0;
+    padding:0;
 }
 
 body {
+    font-family: roboto, sans-serif;
     display:flex;
     flex-direction: column;
     margin:0;
@@ -12,11 +14,12 @@ body {
 
 }
 
-.site-header {
+.navbar {
     background-color: #1F2937;
     display: flex;
     justify-content: space-between;
     padding: 0 48px;
+    
 
    
 }
@@ -31,10 +34,13 @@ h1 {
     color: #f9faf8;
   
 }
-.header-links {display: flex;}
+
+.navbar-left, .navbar-right {
+     display: flex;
+}
 
 
-p, .header-links {
+p, .header-link{
     font-size: 18px;
     color: #E5e7eb;
 }
@@ -50,6 +56,8 @@ p, .header-links {
     display: flex;
     flex-direction: column;
     justify-content:center;
+    width: 50%;
+    gap: 14px;
 
 }
 
@@ -59,49 +67,53 @@ p, .header-links {
     font-weight: 900;}
 
 button {
-    font-family: roboto, sans-serif;
+    
     color: #f9faf8;
     background: #3882f6;
     border: none;
     border-radius: 8px;
-    padding: 8px 24px;
+    width: 100px;
+    height: 25px;
 
 }
 
 .hero-img {
-    width: 300px;
+    width: 400px;
+    margin: 50px;
   
 
 }
 
 .cards {
-    font-family: roboto, sans-serif;
+   
     display: flex;
     flex-direction: column;
     background-color:#f9faf8; 
     align-items: center;
-    padding: 48px;
     flex:1;
-    height: 500px;
+
 }
-.cards-title {
+
+h2  {
     font-size: 36px;
     font-weight: 900;
     color: #1f2937;
+    text-align: center;
         }
 
 .cards-container {
     display: flex;
-    justify-content: center;
-    gap: 48 px;
+    justify-content: space-between;
+    max-width: 75%;
+    margin: 100px;
 }
 
-.cards img {
+.box-cards {
     border: 2px solid #3882f6;
     border-radius: 8px;
-    width: 50 px;
-    height: 50px;
-    object-fit: contain;
+    width: 200px;
+    height: 200px;
+  
 
 }
 
@@ -112,18 +124,30 @@ button {
 
 .quote {
     display: flex;
-    font-family: roboto, sans-serif;
     background-color: #e5e7eb;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
-    color: #1f2937;
     justify-content: center;
     align-items: center;
     padding: 48px;
     flex:1;
     height: 500px;
+    display: flex;
+    flex-direction: column;
 }
+
+h3 {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937;
+}
+
+#thor {
+    font-size: 18px;
+    text-align: end;
+    font-weight: bold;
+    color: #1f2937;
+}
+
 
 .action{
     background-color: #f9faf8;
@@ -143,6 +167,8 @@ button {
     color:#f9faf8;
     justify-content: space-between;
     align-items: center;
+    width: 75%;
+    height: 45%;
     padding: 48px 96px;
     border-radius: 8px;
 }
@@ -150,6 +176,7 @@ button {
 .action-button{
     border: 2px solid #f9faf8;
     border-radius: 8px;
+
 
 }
    
